@@ -1,5 +1,12 @@
 <h2>Listing people</h2>
-<%= link_to 'New Person', new_person_path %>
+
+<%= form_tag root_path, method: :get do %>
+  <%= search_field_tag :q, params[:q], placeholder: 'Search people' %>
+  <%= submit_tag 'Search' %>
+  <%= link_to 'New Person', new_person_path, name: nil %>
+<% end %>
+
+<br>
 
 <table>
   <tr>

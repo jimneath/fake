@@ -12,3 +12,7 @@ end
 gem 'jquery-rails'
 gem 'ffaker'
 gem 'kaminari'
+
+# sphinx
+gem 'mysql2',          '0.3.12b4'
+gem 'thinking-sphinx', '3.0.0'
