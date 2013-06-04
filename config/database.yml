@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: fake_development
+  pool: 5
+  username: jimneath
+  password: 
+  host: 127.0.0.1
