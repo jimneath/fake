@@ -2,14 +2,12 @@
 <html>
 <head>
   <title>Fake</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<h1><%= link_to "Fake Data", root_url %></h1>
-<p>Just a dummy application to test various things</p>
-<hr>
+
 <%= yield %>
 
 </body>
