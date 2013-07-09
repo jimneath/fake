@@ -2,7 +2,7 @@ class PeopleController < ApplicationController
   # GET /people
   # GET /people.json
   def index
-    @people = Person.search(params[:q])
+    @people = Person.page(params[:page]).per(15)
 
     respond_to do |format|
       format.html # index.html.erb
