@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'pg'
 gem 'protected_attributes'
-gem 'puma'
+gem 'unicorn'
 gem 'kaminari'
 gem 'sass-rails', '~> 4.0.0'
 
